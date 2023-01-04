@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="tailwind.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            container: {
+              center: true,
+              padding: "16px",
+            },
+            colors: {
+              primary: "#FFDA40",
+              secondary: "#C88834",
+              stroke: "#F0F0F0",
+              black: "#212121",
+              danger: "#F94D4D",
+              success: "#20B826",
+            },
+            screens: {
+              "2xl": "1320px",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="min-h-screen">
+    <div class="w-full min-h-screen font-sans">
+      <div>
+        <img src="" alt="" class="absolute top-0 right-0 pointer-events-none" />
+        <div class="px-6 mx-auto max-w-6xl">
+          <div class="items-center py-5">
+            <nav class="bg-white w-full">
+              <div
+                class="container m-auto flex justify-between items-center p-5"
+              >
+                <img src="asset/logo.png" class="w-36" alt="" />
+                <ul
+                  class="hidden md:flex items-center pr-10 text-base font-bold cursor-pointer"
+                >
+                  <li>
+                    <a
+                      href=""
+                      class="hover:bg-gray-200 py-4 px-6 text-secondary"
+                    >
+                      Jadi Reseller</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      class="hover:bg-gray-200 py-4 px-6 text-secondary"
+                    >
+                      Dashboard</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      class="hover:bg-gray-200 py-4 px-6 text-secondary"
+                    >
+                      Masuk</a
+                    >
+                  </li>
+                  <button
+                    class="bg-primary text-secondary duration-500 px-6 py-2 mx-4 rounded"
+                  >
+                    Order
+                  </button>
+                </ul>
+                <button
+                  class="block md:hidden py-3 px-4 mx-2 rounded focus:outline-none hover:bg-gray-200 group"
+                >
+                  <div class="w-5 h-1 bg-gray-600 mb-1"></div>
+                  <div class="w-5 h-1 bg-gray-600 mb-1"></div>
+                  <div class="w-5 h-1 bg-gray-600"></div>
+                  <div
+                    class="absolute top-0 -right-full h-screen w-8/12 bg-white border opacity-0 group-focus:right-0 group-focus:opacity-100 transition-all duration-300"
+                  >
+                    <ul
+                      class="flex flex-col items-center w-full text-base cursor-pointer pt-10"
+                    >
+                      <li
+                        class="hover:bg-gray-200 py-4 px-6 w-full text-bold text-secondary"
+                      >
+                        <a href="">Jadi Reseller</a>
+                      </li>
+                      <li
+                        class="hover:bg-gray-200 py-4 px-6 w-full text-bold text-secondary"
+                      >
+                        <a href="">Dashboard</a>
+                      </li>
+                      <li
+                        class="hover:bg-gray-200 py-4 px-6 w-full text-bold text-secondary"
+                      >
+                        <a href="">Masuk</a>
+                      </li>
+                      <li
+                        class="hover:bg-gray-200 py-4 px-6 w-full text-bold text-secondary"
+                      >
+                        <a href="">Order</a>
+                      </li>
+                    </ul>
+                  </div>
+                </button>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="min-h-screen flex flex-col justify-center py-12 px-6 lg:px-8">
+        <div class="sm:mx-auto sm:w-full sm:max-w-md">
+          <img class="mx-auto h-12 w-auto" src="asset/couple.png" alt="Workflow" />
+          <h2 class="mt-6 text-center text-lg font-extrabold text-gray-900">Lupa Password</h2>
+          <p class="mt-2 text-center text-sm text-gray-600 max-w">
+            Kami akan kirim email konfirmasi untuk kamu bisa ubah password
+          </p>
+        </div>
+      
+        <div class="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
+          <div class="bg-white py-8 px-6 shadow rounded-lg sm:px-10">
+            <form class="mb-0 space-y-6" action="#" method="POST">
+              <div>
+                <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                <div class="mt-1">
+                  <input id="email" name="email" type="email" autocomplete="email" required class="bg-gray-200 w-full rounded-md text-sm font-medium p-2" placeholder="Masukkan email" />
+                </div>
+              </div>
+      
+              <div>
+                <button type="submit" class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-bold text-secondary bg-primary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Kirim email</button>
+              </div>
+            </form>
+            <div class="flex justify-center pt-6">
+                <div class="grid grid-flow-col my-4">
+                  <div>
+                    <p class="font-bold text-smtext-black">Sudah ingat password?</p>
+                  </div>
+                  <div>
+                    <button
+                      class="bg-primary text-secondary ml-6 px-2 py-1 rounded font-semibold text-xs"
+                    >
+                      Login di sini
+                    </button>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="content-end bg-gray-200 gap-3 py-8">
+        <div class="grid grid-cols-2 mx-24">
+          <p class="font-bold text-md">Bayar dengan metode apapun yang kamu mau</p>
+          <p class="font-bold text-md">Masih punya pertanyaan?</p>
+        </div>
+        <div class="grid grid-cols-2 mx-24">
+          <div class="grid grid-cols-5 mt-12">
+            <img src="asset/mandiri.png" alt="">
+            <img src="asset/gopay.png" alt="">
+            <img src="asset/bca.png" alt="">
+            <img src="asset/atmbersama.png" alt="">
+            <img src="asset/bni.png" alt="">
+            <img src="asset/permata.png" alt="">
+            <img src="asset/ovo.png" alt="">
+            <img src="asset/spay.png" alt="">
+            <img src="asset/dana.png" alt="">
+            <img src="asset/linkaja.png" alt="">
+          </div>
+          <div class="mt-12">
+            <button class="bg-primary text-secondary font-bold rounded p-2 text-sm">Tanya Kami Lewat WhatsApp</button>
+          </div>
+        </div>
+        <div class="flex justify-center p-5">
+          <img src="asset/logo.png" class="w-24" alt="">
+        </div>
+        <div class="flex justify-center">
+          <p class="text-gray-500 font-semibold text-xs">Copyright &copy 2022 Alexia Teknologi Indonesia All Right Reerved</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
